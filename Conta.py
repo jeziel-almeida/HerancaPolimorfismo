@@ -33,7 +33,7 @@ class Conta:
       return True
 
   def gerar_extrato(self):
-    print(f"Número: {self.numero}\nSaldo: {self._saldo}")
+    print(f"Número: {self.numero}\nSaldo: {self._saldo:.2f}")
 
   def transfereValor(self, contaDestino, valor):
     if self._saldo < valor:
