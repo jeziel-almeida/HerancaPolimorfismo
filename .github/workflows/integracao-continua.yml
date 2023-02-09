@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Máquina Virtual
-      - run: echo "💻 Esse job está rodando em um servidor ${{ runner.os }} hospedado no GitHub!"
+        run: echo "💻 Esse job está rodando em um servidor ${{ runner.os }} hospedado no GitHub!"
       - name: Checkout do Reposiório
         uses: actions/checkout@v3
       - name: Setup Python environment
