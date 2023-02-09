@@ -21,6 +21,9 @@ jobs:
           
       - name: 🟢 Executando o arquivo Teste.py
         run: python Teste.py
+
+      - name: Vendo a versão do Go
+        run: go version
         
       - name: 🍏 Status do Job
         run: echo "This job's status is ${{ job.status }}."
