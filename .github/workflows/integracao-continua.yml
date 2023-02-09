@@ -1,0 +1,19 @@
+name: executando-classe-abstrata
+run-name: ${{ github.actor }} testando classe abstrata em python
+on: [push]
+jobs:
+  testar-classe-abstrata:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Máquina Virtual
+      - run: echo "💻 Esse job está rodando em um servidor ${{ runner.os }} hospedado no GitHub!"
+      - name: Checkout do Reposiório
+        uses: actions/checkout@v3
+      - name: Setup Python environment
+        uses: actions/setup-python@v4
+          with:
+            python-version: '3.10'
+      - name: Executando o arquivo Teste.py
+        run: python Teste.py
+      - name: 🍏 Status do Job
+        run: echo "This job's status is ${{ job.status }}."
